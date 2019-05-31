@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>使用hexo建站记录</title>
+      <link href="/2019/05/31/%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/"/>
+      <url>/2019/05/31/%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><blockquote><p>参考：<a href="https://zhuanlan.zhihu.com/p/56614977" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/56614977</a></p><p>环境win10, cmder,已经含有git</p></blockquote><h2 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h2><p>下载地址：<a href="https://link.zhihu.com/?target=https%3A//nodejs.org/en" target="_blank" rel="noopener">https://nodejs.org/en</a> 推荐下载LTS版，默认安装即可</p><h2 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h2><blockquote><p>npm install -g hexo-cli</p></blockquote><p>不需要管理员权限</p><h2 id="3-初始化hexo文件夹"><a href="#3-初始化hexo文件夹" class="headerlink" title="3.初始化hexo文件夹"></a>3.初始化hexo文件夹</h2><p>在一个文件夹下进行初始化</p><blockquote><p>hexo init</p></blockquote><p>初始化成功后</p><p><img src="https://raw.githubusercontent.com/tksj09/image-hosting/master/img/20190531102005.png?token=ADJYNJ5EHR37PPF2J5ROUBC46CH2C" alt></p><h2 id="4-安装依赖包"><a href="#4-安装依赖包" class="headerlink" title="4.安装依赖包"></a>4.安装依赖包</h2><p>在初始化的文件夹下面执行</p><blockquote><p>npm install</p></blockquote><p>安装完成后的界面</p><p><img src="https://raw.githubusercontent.com/tksj09/image-hosting/master/img/20190531102203.png?token=ADJYNJ7H3UQMXYUKR7WKGJK46CIA2" alt></p><h2 id="5-本地运行hexo"><a href="#5-本地运行hexo" class="headerlink" title="5.本地运行hexo"></a>5.本地运行hexo</h2><p>在初始化的文件夹下面执行</p><blockquote><p>hexo generate</p><p>hexo server</p></blockquote><p>完成后在浏览器中打开：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p><h2 id="6-在github上创建仓库"><a href="#6-在github上创建仓库" class="headerlink" title="6.在github上创建仓库"></a>6.在github上创建仓库</h2><p>仓库名必须是<code>github账号名.github.io</code></p><p>我的github账号是’tksj09’,所以仓库名’tksj09.github.io’</p><h2 id="7-修改配置文件"><a href="#7-修改配置文件" class="headerlink" title="7.修改配置文件"></a>7.修改配置文件</h2><p>需要注意的是每个字段后都有冒号，冒号后有一个英文的空格 修改如下所示：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/tksj09/tksj09.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>url修改如下:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url: https://tksj09.github.io</span><br></pre></td></tr></table></figure><h2 id="8-部署"><a href="#8-部署" class="headerlink" title="8.部署"></a>8.部署</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line"># 生成文件</span><br><span class="line">hexo deploy</span><br><span class="line"># 部署</span><br></pre></td></tr></table></figure><h2 id="9-命令简化"><a href="#9-命令简化" class="headerlink" title="9.命令简化"></a>9.命令简化</h2><p>hexo的命令可以简写，如下：</p><p><img src="https://raw.githubusercontent.com/tksj09/image-hosting/master/img/20190531103001.png?token=ADJYNJYTLY3GEF6JTU5YO3C46CI6S" alt></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>jupyter内核共存</title>
+      <link href="/2019/05/31/jupyter%E5%86%85%E6%A0%B8%E5%85%B1%E5%AD%98/"/>
+      <url>/2019/05/31/jupyter%E5%86%85%E6%A0%B8%E5%85%B1%E5%AD%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="源码下载"><a href="#源码下载" class="headerlink" title="源码下载"></a>源码下载</h1><h2 id="官网地址"><a href="#官网地址" class="headerlink" title="官网地址"></a>官网地址</h2><p><a href="https://www.python.org/downloads/release/python-368/" target="_blank" rel="noopener">https://www.python.org/downloads/release/python-368/</a></p><h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><p><code>tar -zxvf Python-3.6.8.tgz</code></p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">./configure --prefix=/usr/lib/python3.6</span><br><span class="line">make</span><br><span class="line">sudo make install -j 16</span><br><span class="line">cd /usr/bin/</span><br><span class="line">sudo ln -s /usr/lib/python3.6/bin/python3.6 python3.6</span><br><span class="line">sudo ln -s /usr/lib/python3.6/bin/pip3 pip3.6</span><br></pre></td></tr></table></figure><h1 id="python3-5-3-6-jupyter内核共存"><a href="#python3-5-3-6-jupyter内核共存" class="headerlink" title="python3.5 3.6 jupyter内核共存"></a>python3.5 3.6 jupyter内核共存</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">omnisky@node02:~$ python3 -m ipykernel install --user</span><br><span class="line">Installed kernelspec python3 in /home/omnisky/.local/share/jupyter/kernels/python3</span><br><span class="line">omnisky@node02:~$ python3.6 -m ipykernel install --user --name=py_36</span><br><span class="line">Installed kernelspec py_36 in /home/omnisky/.local/share/jupyter/kernels/py_36</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2019/05/31/hello-world/"/>
+      <url>/2019/05/31/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
