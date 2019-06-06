@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="python,">
 
 
 
@@ -94,14 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="&#39;tags&#39;">
-<meta property="og:url" content="https://tksj09.github.io/tags/index.html">
+<meta name="description" content="参考： https://segmentfault.com/q/1010000012147600/  问题原因python3默认使用utf-8，所以网上很多问题的答案没用 最终发现和系统变量LANG有关 实验过程： 文件内容如下 1print(&quot;是&quot;) 执行命令则报错： 12345$ python3 a.py Traceback (most recent call last):  File &quot;a.">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python3 SyntaxError: &#39;ascii&#39; codec can&#39;t decode 的问题">
+<meta property="og:url" content="https://tksj09.github.io/2019/06/06/python3-SyntaxError-ascii-codec-can-t-decode-的问题/index.html">
 <meta property="og:site_name" content="炼丹笔记">
+<meta property="og:description" content="参考： https://segmentfault.com/q/1010000012147600/  问题原因python3默认使用utf-8，所以网上很多问题的答案没用 最终发现和系统变量LANG有关 实验过程： 文件内容如下 1print(&quot;是&quot;) 执行命令则报错： 12345$ python3 a.py Traceback (most recent call last):  File &quot;a.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-31T05:26:56.551Z">
+<meta property="og:updated_time" content="2019-06-06T06:06:23.190Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#39;tags&#39;">
+<meta name="twitter:title" content="python3 SyntaxError: &#39;ascii&#39; codec can&#39;t decode 的问题">
+<meta name="twitter:description" content="参考： https://segmentfault.com/q/1010000012147600/  问题原因python3默认使用utf-8，所以网上很多问题的答案没用 最终发现和系统变量LANG有关 实验过程： 文件内容如下 1print(&quot;是&quot;) 执行命令则报错： 12345$ python3 a.py Traceback (most recent call last):  File &quot;a.">
 
 
 
@@ -130,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://tksj09.github.io/tags/">
+  <link rel="canonical" href="https://tksj09.github.io/2019/06/06/python3-SyntaxError-ascii-codec-can-t-decode-的问题/">
 
 
 
 
 
-  <title>'tags' | 炼丹笔记</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>python3 SyntaxError: 'ascii' codec can't decode 的问题 | 炼丹笔记</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -279,33 +283,161 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tksj09.github.io/2019/06/06/python3-SyntaxError-ascii-codec-can-t-decode-的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一个学习炼丹的人">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="炼丹笔记">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">'tags'</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">python3 SyntaxError: 'ascii' codec can't decode 的问题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-06T13:57:27+08:00">
+                2019-06-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <blockquote>
+<p>参考： <a href="https://segmentfault.com/q/1010000012147600/" target="_blank" rel="noopener">https://segmentfault.com/q/1010000012147600/</a></p>
+</blockquote>
+<h1 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h1><p>python3默认使用utf-8，所以网上很多问题的答案没用</p>
+<p>最终发现和系统变量LANG有关</p>
+<p>实验过程：</p>
+<p>文件内容如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"是"</span>)</span><br></pre></td></tr></table></figure>
+<p>执行命令则报错：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> python3 a.py </span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File "a.py", line 1, in &lt;module&gt;</span><br><span class="line">    print("\u662f")</span><br><span class="line">UnicodeEncodeError: 'ascii' codec can't encode character '\u662f' in position 0: ordinal not in range(128)</span><br></pre></td></tr></table></figure>
+<p>前面加<code>en_US.UTF-8</code>，则正常</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> LANG=en_US.UTF-8 python3 a.py</span></span><br><span class="line">是</span><br></pre></td></tr></table></figure>
+<h1 id="设置LANG"><a href="#设置LANG" class="headerlink" title="设置LANG"></a>设置LANG</h1><p>ubuntu下，可以使用locale命令查看语言设置</p>
+<p>最终在<code>/etc/profile</code>中加入<code>export LANG=en_US.UTF-8</code></p>
+<p>环境设置，可以参考</p>
+<blockquote>
+<p><a href="https://blog.csdn.net/lusongno1/article/details/80802096" target="_blank" rel="noopener">https://blog.csdn.net/lusongno1/article/details/80802096</a></p>
+</blockquote>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/06/远程访问jupyter/" rel="next" title="远程访问jupyter">
+                <i class="fa fa-chevron-left"></i> 远程访问jupyter
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -338,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="一个学习炼丹的人">
           <p class="site-author-name" itemprop="name">一个学习炼丹的人</p>
@@ -390,6 +531,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题原因"><span class="nav-text">问题原因</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置LANG"><span class="nav-text">设置LANG</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -503,10 +660,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 

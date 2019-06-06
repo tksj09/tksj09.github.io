@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>python3 SyntaxError: &#39;ascii&#39; codec can&#39;t decode 的问题</title>
+      <link href="/2019/06/06/python3-SyntaxError-ascii-codec-can-t-decode-%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>/2019/06/06/python3-SyntaxError-ascii-codec-can-t-decode-%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>参考： <a href="https://segmentfault.com/q/1010000012147600/" target="_blank" rel="noopener">https://segmentfault.com/q/1010000012147600/</a></p></blockquote><h1 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h1><p>python3默认使用utf-8，所以网上很多问题的答案没用</p><p>最终发现和系统变量LANG有关</p><p>实验过程：</p><p>文件内容如下</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"是"</span>)</span><br></pre></td></tr></table></figure><p>执行命令则报错：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> python3 a.py </span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File "a.py", line 1, in &lt;module&gt;</span><br><span class="line">    print("\u662f")</span><br><span class="line">UnicodeEncodeError: 'ascii' codec can't encode character '\u662f' in position 0: ordinal not in range(128)</span><br></pre></td></tr></table></figure><p>前面加<code>en_US.UTF-8</code>，则正常</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> LANG=en_US.UTF-8 python3 a.py</span></span><br><span class="line">是</span><br></pre></td></tr></table></figure><h1 id="设置LANG"><a href="#设置LANG" class="headerlink" title="设置LANG"></a>设置LANG</h1><p>ubuntu下，可以使用locale命令查看语言设置</p><p>最终在<code>/etc/profile</code>中加入<code>export LANG=en_US.UTF-8</code></p><p>环境设置，可以参考</p><blockquote><p><a href="https://blog.csdn.net/lusongno1/article/details/80802096" target="_blank" rel="noopener">https://blog.csdn.net/lusongno1/article/details/80802096</a></p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>远程访问jupyter</title>
       <link href="/2019/06/06/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEjupyter/"/>
       <url>/2019/06/06/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AEjupyter/</url>
