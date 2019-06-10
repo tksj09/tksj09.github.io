@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="python,">
 
 
 
@@ -94,13 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="炼丹笔记">
-<meta property="og:url" content="https://tksj09.github.io/tags/jupyter/index.html">
+<meta name="description" content="关于深浅拷贝，官方文档说的很清楚，而且简洁  https://docs.python.org/3.6/library/copy.html  区别The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python浅拷贝和深拷贝">
+<meta property="og:url" content="https://tksj09.github.io/2019/06/10/python浅拷贝和深拷贝/index.html">
 <meta property="og:site_name" content="炼丹笔记">
+<meta property="og:description" content="关于深浅拷贝，官方文档说的很清楚，而且简洁  https://docs.python.org/3.6/library/copy.html  区别The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-10T01:15:25.920Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="炼丹笔记">
+<meta name="twitter:title" content="python浅拷贝和深拷贝">
+<meta name="twitter:description" content="关于深浅拷贝，官方文档说的很清楚，而且简洁  https://docs.python.org/3.6/library/copy.html  区别The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like">
 
 
 
@@ -129,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://tksj09.github.io/tags/jupyter/">
+  <link rel="canonical" href="https://tksj09.github.io/2019/06/10/python浅拷贝和深拷贝/">
 
 
 
 
 
-  <title>标签: jupyter | 炼丹笔记</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>python浅拷贝和深拷贝 | 炼丹笔记</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -160,7 +165,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left  ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -276,52 +281,171 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>jupyter<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tksj09.github.io/2019/06/10/python浅拷贝和深拷贝/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一个学习炼丹的人">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="炼丹笔记">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/06/06/远程访问jupyter/" itemprop="url">
-              
-                <span itemprop="name">远程访问jupyter</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">python浅拷贝和深拷贝</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-06T11:02:39+08:00" content="2019-06-06">
-          06-06
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-10T08:48:07+08:00">
+                2019-06-10
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>关于深浅拷贝，官方文档说的很清楚，而且简洁</p>
+<blockquote>
+<p><a href="https://docs.python.org/3.6/library/copy.html" target="_blank" rel="noopener">https://docs.python.org/3.6/library/copy.html</a></p>
+</blockquote>
+<h1 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h1><p>The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like lists or class instances):</p>
+<ul>
+<li>A <em>shallow copy</em> constructs a new compound object and then (to the extent possible) inserts <em>references</em> into it to the objects found in the original.</li>
+<li>A <em>deep copy</em> constructs a new compound object and then, recursively, inserts <em>copies</em>into it of the objects found in the original.</li>
+</ul>
+<h1 id="deep-copy-problems"><a href="#deep-copy-problems" class="headerlink" title="deep copy problems"></a>deep copy problems</h1><p>Two problems often exist with deep copy operations that don’t exist with shallow copy operations:</p>
+<ul>
+<li>Recursive objects (compound objects that, directly or indirectly, contain a reference to themselves) may cause a recursive loop.</li>
+<li>Because deep copy copies everything it may copy too much, such as data which is intended to be shared between copies.</li>
+</ul>
+<p>The <a href="https://docs.python.org/3.6/library/copy.html#copy.deepcopy" target="_blank" rel="noopener"><code>deepcopy()</code></a> function avoids these problems by:</p>
+<ul>
+<li>keeping a <code>memo</code> dictionary of objects already copied during the current copying pass; and</li>
+<li>letting user-defined classes override the copying operation or the set of components copied.</li>
+</ul>
+<h2 id="其他一些拷贝方式"><a href="#其他一些拷贝方式" class="headerlink" title="其他一些拷贝方式"></a>其他一些拷贝方式</h2><h3 id="a-slice-of-the-entire-list"><a href="#a-slice-of-the-entire-list" class="headerlink" title="a slice of the entire list"></a>a slice of the entire list</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">b = a[:]</span><br><span class="line">a.append(<span class="number">4</span>)</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<h3 id="dict-copy"><a href="#dict-copy" class="headerlink" title="dict.copy()"></a>dict.copy()</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="number">1</span>:<span class="number">2</span>,<span class="number">3</span>:<span class="number">4</span>&#125;</span><br><span class="line">b = a.copy()</span><br><span class="line">a[<span class="number">5</span>] = <span class="number">6</span></span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
+<p>result:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="number">1</span>: <span class="number">2</span>, <span class="number">3</span>: <span class="number">4</span>, <span class="number">5</span>: <span class="number">6</span>&#125;</span><br><span class="line">&#123;<span class="number">1</span>: <span class="number">2</span>, <span class="number">3</span>: <span class="number">4</span>&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/06/python3-SyntaxError-ascii-codec-can-t-decode-的问题/" rel="next" title="python3 SyntaxError: 'ascii' codec can't decode 的问题">
+                <i class="fa fa-chevron-left"></i> python3 SyntaxError: 'ascii' codec can't decode 的问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -329,6 +453,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -349,8 +477,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="一个学习炼丹的人">
           <p class="site-author-name" itemprop="name">一个学习炼丹的人</p>
@@ -401,6 +538,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#区别"><span class="nav-text">区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#deep-copy-problems"><span class="nav-text">deep copy problems</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#其他一些拷贝方式"><span class="nav-text">其他一些拷贝方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-slice-of-the-entire-list"><span class="nav-text">a slice of the entire list</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dict-copy"><span class="nav-text">dict.copy()</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -514,10 +667,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -870,39 +1023,7 @@
         onPopupClose();
       }
     });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -920,6 +1041,18 @@
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
+
+
+
+
+
+  
+
+  
+
+  
+
+  
   
 
 

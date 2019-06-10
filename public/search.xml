@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>python浅拷贝和深拷贝</title>
+      <link href="/2019/06/10/python%E6%B5%85%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B7%B1%E6%8B%B7%E8%B4%9D/"/>
+      <url>/2019/06/10/python%E6%B5%85%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B7%B1%E6%8B%B7%E8%B4%9D/</url>
+      
+        <content type="html"><![CDATA[<p>关于深浅拷贝，官方文档说的很清楚，而且简洁</p><blockquote><p><a href="https://docs.python.org/3.6/library/copy.html" target="_blank" rel="noopener">https://docs.python.org/3.6/library/copy.html</a></p></blockquote><h1 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h1><p>The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like lists or class instances):</p><ul><li>A <em>shallow copy</em> constructs a new compound object and then (to the extent possible) inserts <em>references</em> into it to the objects found in the original.</li><li>A <em>deep copy</em> constructs a new compound object and then, recursively, inserts <em>copies</em>into it of the objects found in the original.</li></ul><h1 id="deep-copy-problems"><a href="#deep-copy-problems" class="headerlink" title="deep copy problems"></a>deep copy problems</h1><p>Two problems often exist with deep copy operations that don’t exist with shallow copy operations:</p><ul><li>Recursive objects (compound objects that, directly or indirectly, contain a reference to themselves) may cause a recursive loop.</li><li>Because deep copy copies everything it may copy too much, such as data which is intended to be shared between copies.</li></ul><p>The <a href="https://docs.python.org/3.6/library/copy.html#copy.deepcopy" target="_blank" rel="noopener"><code>deepcopy()</code></a> function avoids these problems by:</p><ul><li>keeping a <code>memo</code> dictionary of objects already copied during the current copying pass; and</li><li>letting user-defined classes override the copying operation or the set of components copied.</li></ul><h2 id="其他一些拷贝方式"><a href="#其他一些拷贝方式" class="headerlink" title="其他一些拷贝方式"></a>其他一些拷贝方式</h2><h3 id="a-slice-of-the-entire-list"><a href="#a-slice-of-the-entire-list" class="headerlink" title="a slice of the entire list"></a>a slice of the entire list</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">b = a[:]</span><br><span class="line">a.append(<span class="number">4</span>)</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure><p>结果：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure><h3 id="dict-copy"><a href="#dict-copy" class="headerlink" title="dict.copy()"></a>dict.copy()</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="number">1</span>:<span class="number">2</span>,<span class="number">3</span>:<span class="number">4</span>&#125;</span><br><span class="line">b = a.copy()</span><br><span class="line">a[<span class="number">5</span>] = <span class="number">6</span></span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure><p>result:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="number">1</span>: <span class="number">2</span>, <span class="number">3</span>: <span class="number">4</span>, <span class="number">5</span>: <span class="number">6</span>&#125;</span><br><span class="line">&#123;<span class="number">1</span>: <span class="number">2</span>, <span class="number">3</span>: <span class="number">4</span>&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python3 SyntaxError: &#39;ascii&#39; codec can&#39;t decode 的问题</title>
       <link href="/2019/06/06/python3-SyntaxError-ascii-codec-can-t-decode-%E7%9A%84%E9%97%AE%E9%A2%98/"/>
       <url>/2019/06/06/python3-SyntaxError-ascii-codec-can-t-decode-%E7%9A%84%E9%97%AE%E9%A2%98/</url>
