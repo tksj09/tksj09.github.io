@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="工具,ssh,">
 
 
 
@@ -94,13 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="炼丹笔记">
-<meta property="og:url" content="https://tksj09.github.io/tags/jupyter/index.html">
+<meta name="description" content="win10 cmder &amp;#x68;&amp;#x74;&amp;#x74;&amp;#x70;&amp;#115;&amp;#x3a;&amp;#x2f;&amp;#x2f;&amp;#109;&amp;#101;&amp;#x64;&amp;#x69;&amp;#117;&amp;#x6d;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&amp;#x2f;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#x6e;&amp;#117;&amp;#115;&amp;#x2f;&amp;#99;&amp;#x6d;&amp;#x64;&amp;#x65;&amp;#1">
+<meta name="keywords" content="工具,ssh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cmder使用ssh免密登录">
+<meta property="og:url" content="https://tksj09.github.io/2019/06/13/cmder使用ssh免密登录/index.html">
 <meta property="og:site_name" content="炼丹笔记">
+<meta property="og:description" content="win10 cmder &amp;#x68;&amp;#x74;&amp;#x74;&amp;#x70;&amp;#115;&amp;#x3a;&amp;#x2f;&amp;#x2f;&amp;#109;&amp;#101;&amp;#x64;&amp;#x69;&amp;#117;&amp;#x6d;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&amp;#x2f;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#x6e;&amp;#117;&amp;#115;&amp;#x2f;&amp;#99;&amp;#x6d;&amp;#x64;&amp;#x65;&amp;#1">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-13T08:34:57.536Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="炼丹笔记">
+<meta name="twitter:title" content="cmder使用ssh免密登录">
+<meta name="twitter:description" content="win10 cmder &amp;#x68;&amp;#x74;&amp;#x74;&amp;#x70;&amp;#115;&amp;#x3a;&amp;#x2f;&amp;#x2f;&amp;#109;&amp;#101;&amp;#x64;&amp;#x69;&amp;#117;&amp;#x6d;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&amp;#x2f;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#x6e;&amp;#117;&amp;#115;&amp;#x2f;&amp;#99;&amp;#x6d;&amp;#x64;&amp;#x65;&amp;#1">
 
 
 
@@ -129,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://tksj09.github.io/tags/jupyter/">
+  <link rel="canonical" href="https://tksj09.github.io/2019/06/13/cmder使用ssh免密登录/">
 
 
 
 
 
-  <title>标签: jupyter | 炼丹笔记</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>cmder使用ssh免密登录 | 炼丹笔记</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -160,7 +165,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left  ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -276,52 +281,163 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>jupyter<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tksj09.github.io/2019/06/13/cmder使用ssh免密登录/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一个学习炼丹的人">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="炼丹笔记">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/06/06/远程访问jupyter/" itemprop="url">
-              
-                <span itemprop="name">远程访问jupyter</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">cmder使用ssh免密登录</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-06T11:02:39+08:00" content="2019-06-06">
-          06-06
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-13T16:25:17+08:00">
+                2019-06-13
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>win10</p>
+<p>cmder</p>
+<p><a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#58;&#x68;&#x74;&#x74;&#x70;&#115;&#x3a;&#x2f;&#x2f;&#109;&#101;&#x64;&#x69;&#117;&#x6d;&#x2e;&#99;&#x6f;&#109;&#x2f;&#x40;&#x65;&#x72;&#x69;&#x6e;&#117;&#115;&#x2f;&#99;&#x6d;&#x64;&#x65;&#114;&#45;&#x73;&#101;&#x74;&#117;&#x70;&#45;&#116;&#97;&#115;&#107;&#115;&#x2d;&#x65;&#x35;&#49;&#x30;&#x39;&#98;&#98;&#98;&#x37;&#x34;&#50;&#98;">&#x68;&#x74;&#x74;&#x70;&#115;&#x3a;&#x2f;&#x2f;&#109;&#101;&#x64;&#x69;&#117;&#x6d;&#x2e;&#99;&#x6f;&#109;&#x2f;&#x40;&#x65;&#x72;&#x69;&#x6e;&#117;&#115;&#x2f;&#99;&#x6d;&#x64;&#x65;&#114;&#45;&#x73;&#101;&#x74;&#117;&#x70;&#45;&#116;&#97;&#115;&#107;&#115;&#x2d;&#x65;&#x35;&#49;&#x30;&#x39;&#98;&#98;&#98;&#x37;&#x34;&#50;&#98;</a></p>
+<p><a href="https://zhuyasen.com/post/cmder.html#toc_10" target="_blank" rel="noopener">https://zhuyasen.com/post/cmder.html#toc_10</a></p>
+<p><a href="https://daemon369.github.io/ssh/2015/03/21/using-ssh-config-file" target="_blank" rel="noopener">https://daemon369.github.io/ssh/2015/03/21/using-ssh-config-file</a></p>
+</blockquote>
+<p>想用cmder免密登录服务器</p>
+<h1 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h1><p><code>C:\Users\用户名\.ssh</code>下需要有公钥<code>id_rsa.pub</code></p>
+<p>没有则使用<code>ssh-keygen -t rsa</code>生成</p>
+<h2 id="配置config"><a href="#配置config" class="headerlink" title="配置config"></a>配置config</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host test1</span><br><span class="line">     HostName 192.168.*.*</span><br><span class="line">     Port 22</span><br><span class="line">     User username</span><br><span class="line">     PubkeyAuthentication yes</span><br><span class="line">     ServerAliveInterval 60</span><br></pre></td></tr></table></figure>
+<p>如上配置中，<code>User</code>后面需要制定登录服务器的用户名</p>
+<p><code>ssh test1</code>就可以连接了</p>
+<h1 id="服务器配置"><a href="#服务器配置" class="headerlink" title="服务器配置"></a>服务器配置</h1><p>将本地公钥的内容加入到远程服务器.ssh/authorized_keys文件里</p>
+<p>​        </p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/工具/" rel="tag"># 工具</a>
+          
+            <a href="/tags/ssh/" rel="tag"># ssh</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/11/python编程总结/" rel="next" title="'python编程总结'">
+                <i class="fa fa-chevron-left"></i> 'python编程总结'
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -329,6 +445,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -349,8 +469,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="一个学习炼丹的人">
           <p class="site-author-name" itemprop="name">一个学习炼丹的人</p>
@@ -401,6 +530,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#本地设置"><span class="nav-text">本地设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置config"><span class="nav-text">配置config</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#服务器配置"><span class="nav-text">服务器配置</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -514,10 +659,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -870,39 +1015,7 @@
         onPopupClose();
       }
     });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -920,6 +1033,18 @@
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
+
+
+
+
+
+  
+
+  
+
+  
+
+  
   
 
 
